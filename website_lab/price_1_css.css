@@ -1,0 +1,9 @@
+a{
+    text-decoration: none;
+}
+table,td,th{
+    border: double black;
+}
+*{
+    text-transform: capitalize;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <script src="event_handling.js"></script>
+    <style>
+        button{
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="event_handlingcss.css">
+</head>
+<body>
+    <h1> Form </h1>
+    <div class="div" id="divform">
+    <fieldset> <legend>Student's Information</legend>
+    <form action="">
+        <label for="firstName" id="firstName">First Name: </label>
+        <input type="text"><br><br>
+        <label for="lastName" id="lastName">Last Name: </label>
+        <input type="text"><br><br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email"><br><br>
+        <label for="phone">Phone: </label>
+        <input type="number" name="phone" id="phone"><br><br>
+        <button type="submit" id="submit" onmouseover="submit_mouse_over()">Submit</button>
+        <button type="reset" id="reset">Reset</button>
+        <button id="print" onclick="btprint()">Print</button>
+    </form>
+    </fieldset>
+    </div>
+</body>
+</html>

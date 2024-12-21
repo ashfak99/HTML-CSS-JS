@@ -1,0 +1,18 @@
+body{
+    background-color: lightblue;
+}
+#submit{
+    background-color: lightgreen;
+}
+#reset{
+    background-color: rgb(206, 17, 17);
+}
+input{
+    background-color: lightblue;
+    color: rgb(99, 10, 232);
+}
+.div{
+    display: flex;
+    align-content: center;
+
+}

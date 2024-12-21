@@ -1,0 +1,37 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.box{
+    box-shadow: 0px 0px 30px rgb(234, 205, 205);
+    background-color: transparent;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+}
+body{
+    background-image: url(/background/pexels-muffin-1629998.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.btn{
+   margin-top: 10px;
+}
+.Alam{
+    width: 22%;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px white;
+    font-size: larger;
+    color: white;
+    background-color: transparent;
+}
+#display{
+    width: 90%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: large;
+}

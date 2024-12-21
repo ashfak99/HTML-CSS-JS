@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum Values</title>
+</head>
+<body>
+<script >
+    function max(arrays) {
+        for (let i = 0; i<arr.length; i++) {
+           if (arr[i]>arr[i+1]) {
+            let temp;
+            temp=arr[i];
+            arr[i]=arr[i+1];
+            arr[i+1]=temp;
+           }
+        }
+       let maxValue=arr[arr.length-1];
+       return maxValue;
+    }
+    let arr=[];
+    let num;
+    for (let i = 0; i < 5; i++) {
+    num=prompt("Enter a Number: ");
+    num=parseInt(num);
+    arr.push(num);
+    }
+    maxValue1=max(arr);
+    document.write("Maximum Values: "+maxValue1);
+    document.write("<br>Maximum Values logic");
+    
+</script>
+</body>
+</html>

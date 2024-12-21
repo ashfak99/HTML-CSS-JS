@@ -1,0 +1,38 @@
+#resume{
+    color: #ef0a0a;
+    text-transform: inherit;
+}
+ol li{
+    list-style-type: upper-latin;
+}
+ul li{
+    list-style-type: square;
+    font-style: oblique;
+}
+#ol_s{
+    color: aqua;
+}
+.name{
+    color: #40ed07;
+}
+b{
+    color: blue;
+}
+#pa{
+    color: #85dd0af;
+}
+a{
+    text-decoration: none;
+}
+*{
+    color: #ef0a0a;
+    text-transform: uppercase;
+    line-height: 50px;
+    background-color: lightblue;
+}
+a{
+    color: blue;
+    font-weight: 800;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
