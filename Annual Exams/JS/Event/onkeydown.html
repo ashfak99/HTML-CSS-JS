@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Key Down Event</title>
+</head>
+<body>
+    <div class="main">
+        <label for="input">Press Any Key</label>
+        <input type="text" name="ip" id="input" onkeydown="keydown()"><br>
+    </div>
+    <script>
+        function keydown()
+        {
+            document.getElementById("input").style.backgroundColor="Blue";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <label for="number">Enter a Number : </label>
+    <input type="number" name="number" id="number" placeholder="Enter A Number"><br>
+    <button onclick="palindrome()">SUBMIT</button>
+    <p id="reverseResult"></p><br>
+    <p id="palindromeResult"></p><br>
+    
+    <script>
+        function palindrome()
+        {
+            let number=document.getElementById('number').value;
+            let reverse=0;
+            let original=number;
+
+            while(number>0)
+            {
+                let remainder=number%10;
+                reverse=reverse*10+remainder;
+                number=Math.floor(number/10);
+            }
+            document.getElementById("reverseResult").innerText="Revese Result : "+reverse;
+
+            if(reverse==original)
+            {
+                document.getElementById("palindromeResult").innerText="The Number"+original+"is A Palindrom!";
+            }
+            else{
+                document.getElementById("palindromeResult").innerText="The Number : "+original+" : is Not A Palind";
+            }
+        }
+    </script>
+</body>
+</html>

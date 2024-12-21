@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Rectangle Shapes</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+   </div>
+    <script>
+        const canvas=document.getElementById('myCanvas');
+        const ctx=canvas.getContext('2d');
+        ctx.strokeRect(10, 10, 100, 100);
+
+        ctx.beginPath();
+        ctx.moveTo(110,110);
+        ctx.lineTo(150,150)
+        ctx.stroke()
+    </script>
+</body>
+</html>

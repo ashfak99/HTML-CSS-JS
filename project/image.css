@@ -1,0 +1,17 @@
+.img{
+    width: 300px;
+    height: 300px;
+    margin-left: 200px;
+    margin-top: 200px;
+    border-radius: 50%;
+    border: 5px solid #333;
+    object-fit: cover;
+    animation: imagecolorchange 4s infinite;
+}
+@keyframes imagecolorchange{
+    0% {border-color: red;}
+    25%{border-color: yellow;}
+    50% {border-color: rgb(41, 174, 5);}
+    75% {border-color: rgb(0, 157, 255);}
+    100% {border-color: blue;}
+}

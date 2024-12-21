@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse of a Number</title>
+</head>
+<body>
+    <h2>Reverse a Number</h2>
+    <label for="number">Enter a number:</label>
+    <input type="number" id="number" />
+    <button onclick="reverseNumber()">Reverse</button>
+    <p id="reverseResult"></p>
+
+    <script>
+        function reverseNumber() {
+            let num = document.getElementById("number").value; // Input value
+            let reverse = 0;
+
+            // Logic to reverse the number
+            while (num > 0) {
+                let remainder = num % 10; // Get the last digit
+                reverse = reverse * 10 + remainder; // Build the reverse number
+                num = Math.floor(num / 10); // Remove the last digit
+            }
+
+            // Display the result
+            document.getElementById("reverseResult").innerText = 
+                "Reversed Number: " + reverse;
+        }
+    </script>
+</body>
+</html>

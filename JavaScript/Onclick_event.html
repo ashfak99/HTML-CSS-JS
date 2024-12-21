@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <script>
+        function text(){
+            document.getElementById('text').innerHTML="Hello World";
+            document.getElementById('text').style.backgroundColor="orange";
+        }
+        function background(){
+            document.getElementById('mouseover').style.backgroundColor="green";
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="text" id="text">Hello Guys</div>
+        <button onclick="text()">Click Me</button><br>
+        <div class="mouse_over" id="mouseover" onmouseover="background()">Hello Boys</div>
+    </div>
+</body>
+</html>

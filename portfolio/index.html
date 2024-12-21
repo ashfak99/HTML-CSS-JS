@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashfak Portfolio | Codsoft</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+      <main> 
+      <nav> 
+        <div class="left">Ashfak's Portfolio</div>
+        <div class="right">
+            <ul style="list-style: none;">
+                <li><a href="/">Home</a></li>
+                <li><a href="active-tab">About</a></li>
+                <li><a href="/">Skills</a></li>
+                <li><a href="/">Project</a></li>
+                <li><a href="/">Contact</a></li> 
+            </ul>
+        </div>
+      </nav>
+      <section class="firstsection">
+        <div class="leftsection">
+            <div>Hello, My name is <span>Ashfak</span></div>
+           <div>and I am a Web Developer</div>
+        </div>
+        <div class="rightsection"><img src="IMG_20240429_173708_778-removebg-preview.png" alt="Web Developer"></div>
+      </section>
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="IMG_20231231_074713_435-removebg-preview.png" alt="">
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>Hello, My name is Ashfak Alam. I belongs to Gopalganj, Bihar. I complete 10th from BSEB board with 79% marks. After 10th I admit in diploma.  I do Diploma in Computer Engg. from University Polytechniq Jamia Milla Islamia (January 2022-December 2024). I am a web developer and Software Engineer.</p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills-tab')">Skills</p>
+                <p class="tab-links " onclick="opentab('Project-tab')">Project</p>
+                <p class="tab-links" onclick="opentab('education-tab')">Education</p>
+              </div>
+              <div class="tab-contains active-tab" id="skills-tab">
+                <ul>
+                  <li><Span>UI/UX</Span><br>Designing Web Interface</li>
+                  <li><Span>Web Development</Span><br>Web App Development</li>
+                  <li><Span>DSA</Span><br>Data Structure and Algorithms</li>
+                </ul>
+              </div>
+              <div class="tab-contains" id="Project-tab">
+                <ul>
+                  <li><Span>To-Do list</Span><br>Web Based Task List Application</li>
+                  <li><Span>Portfolio</Span><br>My Personal Portfolio</li>
+                  <li><Span>Quiz app</Span><br>A simple Quiz app using HTML,CSS,JS</li>
+                </ul>
+              </div>
+              <div class="tab-contains" id="education-tab">
+                <ul>
+                  <li><Span>10th</Span><br>BSEB,patna</li>
+                  <li><Span>Diploma-Computer Engg.</Span><br>Jamia Millia Islamia</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </main>
+   </header>
+   <script> 
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontains= document.getElementsByClassName("tab-contains");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+      }
+      for(tabcontain of tabcontains){
+        tabcontain.classList.remove("active-tab")
+      }
+    }
+   </script>
+</body>
+</html>

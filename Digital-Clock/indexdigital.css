@@ -1,0 +1,61 @@
+body{
+    background-image: url(pexels-paul-cameron-477972-1187974.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container.day{
+    font-size: large;
+}
+.container{
+   box-shadow: 0px 0px 40px gray;
+   color: rgba(223, 242, 250, 0.715);
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 500;
+   border-radius: 30px;
+   padding: 20px;
+}
+.clock.time{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: auto;
+}
+.clock span{
+    display: inline-block;
+
+}
+.clock span::after{
+    font-size: 16px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#hor::after{
+    content: 'HOURS';
+}
+#min::after{
+    content: 'MINUTES';
+}
+#sec::after{
+    content: 'SECONDS';
+}
+.time{
+    font-size: 80px;
+}
+.date{
+    font-size: 40px;
+}

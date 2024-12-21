@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(239, 219, 192);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            width: 90%;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 5px gray;
+            background-color: rgb(248, 216, 221);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .heading b {
+            font-size: larger;
+        }
+
+        .details {
+            margin-bottom: 20px;
+        }
+
+        .date, .honey {
+            font-size: medium;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        #dt, #dy, #honey {
+            margin-left: 10px;
+        }
+
+        .img {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .img img {
+            padding: 10px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            transition: width 0.3s, height 0.3s;
+        }
+
+        .finger {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .finger div {
+            border: 1px solid black;
+            width: 80px;
+            height: 80px;
+            padding: 10px;
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            .img img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .finger {
+                gap: 10px;
+            }
+
+            .details {
+                font-size: small;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="heading">
+            <b style="text-align: center;">Marriage</b><br>
+            <b style="text-align: center;">ASHFAK 💕 UZMA</b>
+        </div>
+        <hr>
+        <div class="details">
+            <div class="date">
+                <b>Wedding Date:</b>  
+                <p id="dt">2025-02-14</p>
+                <p id="dy">Friday</p>
+            </div>
+            <hr>
+            <div class="honey">
+                <b>Honeymoon:</b> 
+                <p id="honey">2025-02-14 Crowne Plaza Okhla at Night 09:00 pm</p>
+            </div>
+        </div>
+        <hr>
+        <div class="img">
+            <div class="right">
+                <img src="uzma-removebg-preview.png" alt="UZMA">
+            </div>
+            <div class="heart">
+                <img src="pngtree-3d-hearts-for-valentine-png-image_2650298-removebg-preview.png" alt="heart">
+            </div>
+            <div class="left">
+                <img src="ashfal-removebg-preview.png" alt="ASHFAK">
+            </div>
+        </div>
+        <hr>
+        <div class="finger">
+            <div class="uzma"></div>
+            <div class="ashfak"></div>
+        </div>
+    </div>
+</body>
+</html>

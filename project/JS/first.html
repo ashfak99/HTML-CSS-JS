@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+    <form name="Survey Form 1">
+        FIRST FORM : <i><b>Survey Form 1</b></i><br><br>
+        First Name : <input type="text" name="name" id="name"><br><br>
+        <input type="radio" name="radio" id="radio">Fresher <br><br>
+        <input type="radio" name="radio" id="radio">Experience <br><br>
+        <input type="button" onclick="ver(form)" name="button1" value="Click1">
+    </form>
+
+    <form name="Survey Form 2">
+        SECOND FORMS: <i><b>Survey Form 2</b></i><br><br>
+        Name : <input type="text" name="name" id="name"><br><br>
+        Password : <input type="password" name="pass" id="pass"><br><br>
+        <input type="radio" name="radio" id="radio">Employed <br><br>
+        <input type="radio" name="radio" id="radio">Studing<br><br>
+        <input type="button" onclick="ver(form)" name="button2" value="Click2">
+    </form>
+
+    <script>
+        function ver(form1){
+            v=form1.elements.length;
+            if(form1.elements[3].name=="button1"){
+                alert("First form name : "+document.forms[0].name);
+                alert("No. of Form element of"+document.forms[0].name+'='+v);
+            }
+            else if(form1.elements[4].name=="button2")
+            {
+                alert("Second form name : "+document.forms[1].name);
+                alert("No. of Form element of "+document.forms[1].name+'='+v);
+            }
+            for(i=0;i<v;i++)
+            alert(form1.elements[i].name+'is at position'+i);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun | Ashfak Alam</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgb(239, 212, 212),rgb(215, 245, 182));
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .mai{
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mai button{
+            margin-top: 15%;
+            font-size: 50px;
+            border-radius: 30%;
+            background-color: rgb(150, 201, 246);
+        }
+        .mai button:hover{
+            color: beige;
+            background-color: rgb(109, 241, 133);
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mai"><button type="submit" id="button" onclick="hello()">Click Me</button></div>
+
+    <script>
+        let button = document.getElementById('button');
+        function hello(){
+            document.write('<div style="display: flex; align-items: center; justify-content: center; height: 100vh; background: linear-gradient(rgb(239, 212, 212), rgb(215, 245, 182));"><p style="font-size: 30px; text-align: center; color: rgb(50, 50, 50);">In English We Say,<br>"Blue salwar, blue undergarment, now I won`t give (in), my dear, there`s a baby in my belly."<br>But in Hindi,<br>"Nila Salwar hai Nila kachchha hai, Ab na Dungi Balam Pet me Bachha Hai"</p></div>');
+        }
+    </script>
+</body>
+</html>
